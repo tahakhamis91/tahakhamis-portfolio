@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TK Admin Dashboard</title>
+    <link rel="stylesheet" href="css/admin.css?v=3.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Admin Lock Screen -->
+    <div class="login-overlay active" id="login-overlay">
+        <div class="login-card">
+            <div class="login-icon">
+                <i class="fa-solid fa-lock"></i>
+            </div>
+            <h2>TK Admin Access</h2>
+            <p>Enter passcode to unlock Admin Dashboard</p>
+            <form id="login-form">
+                <div class="form-group" style="margin-top: 20px;">
+                    <input type="password" class="form-input" id="login-passcode" placeholder="Enter Passcode..." autofocus required style="text-align: center; letter-spacing: 5px; font-size: 1.2rem;">
+                </div>
+                <button type="submit" class="add-btn" style="width: 100%; justify-content: center; margin-top: 10px;">
+                    <i class="fa-solid fa-key"></i> Unlock Dashboard
+                </button>
+            </form>
+            <p class="form-hint" style="margin-top: 15px; text-align: center;">Default Passcode: <code>1234</code> (can be changed in settings)</p>
+        </div>
+    </div>
+
+    <!-- Top Bar -->
+    <header class="admin-topbar">
+        <div class="topbar-left">
+            <button class="sidebar-toggle" id="sidebar-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <span class="admin-logo">TK.<span class="logo-accent">Admin</span></span>
+        </div>
+        <div class="topbar-right">
+            <a href="index.html" class="topbar-btn">
+                <i class="fa-solid fa-arrow-left"></i>
+                <span class="btn-text">Back to Site</span>
+            </a>
+            <button class="topbar-btn primary" id="export-btn">
+                <i class="fa-solid fa-download"></i>
+                <span class="btn-text">Export data.js</span>
+            </button>
+            <button class="topbar-btn sync-btn" id="sync-btn">
+                <i class="fa-brands fa-github"></i>
+                <span class="btn-text">Sync to GitHub</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Layout -->
+    <div class="admin-layout">
+        <!-- Sidebar -->
+        <aside class="admin-sidebar" id="admin-sidebar">
+            <nav class="sidebar-nav">
+                <button class="sidebar-item active" data-section="dashboard">
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <span>Dashboard</span>
+                </button>
+                <div class="sidebar-divider"></div>
+                <span class="sidebar-label">Content</span>
+                <button class="sidebar-item" data-section="projects">
+                    <i class="fa-solid fa-folder-open"></i>
+                    <span>Projects</span>
+                </button>
+                <button class="sidebar-item" data-section="services">
+                    <i class="fa-solid fa-cogs"></i>
+                    <span>Services</span>
+                </button>
+                <div class="sidebar-divider"></div>
+                <span class="sidebar-label">Resume</span>
+                <button class="sidebar-item" data-section="experience">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <span>Experience</span>
+                </button>
+                <button class="sidebar-item" data-section="education">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <span>Education</span>
+                </button>
+                <button class="sidebar-item" data-section="courses">
+                    <i class="fa-solid fa-book"></i>
+                    <span>Courses</span>
+                </button>
+                <button class="sidebar-item" data-section="skills">
+                    <i class="fa-solid fa-code"></i>
+                    <span>Skills & Tools</span>
+                </button>
+                <div class="sidebar-divider"></div>
+                <span class="sidebar-label">Settings</span>
+                <button class="sidebar-item" data-section="personal">
+                    <i class="fa-solid fa-user"></i>
+                    <span>Personal Info</span>
+                </button>
+                <button class="sidebar-item" data-section="categories">
+                    <i class="fa-solid fa-tags"></i>
+                    <span>Categories</span>
+                </button>
+                <button class="sidebar-item" data-section="github">
+                    <i class="fa-brands fa-github"></i>
+                    <span>GitHub Sync</span>
+                </button>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="admin-main">
+
+            <!-- Dashboard Overview -->
+            <div class="admin-section active" id="section-dashboard">
+                <div class="section-header">
+                    <div>
+                        <h2><i class="fa-solid fa-chart-simple"></i> Dashboard</h2>
+                        <p class="section-subtitle">Overview of your portfolio content</p>
+                    </div>
+                </div>
+                <div class="stats-grid" id="stats-grid">
+                    <!-- Injected by JS -->
+                </div>
+                <div class="quick-actions">
+                    <h3>Quick Actions</h3>
+                    <div class="actions-grid">
+                        <button class="action-card" data-action="add-project">
+                            <i class="fa-solid fa-plus"></i>
+                            <span>Add Project</span>
+                        </button>
+                        <button class="action-card" data-action="export">
+                            <i class="fa-solid fa-download"></i>
+                            <span>Export data.js</span>
+                        </button>
+                        <a href="index.html" class="action-card" target="_blank">
+                            <i class="fa-solid fa-eye"></i>
+                            <span>Preview Site</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projects Section -->
+            <div class="admin-section" id="section-projects">
+                <div class="section-header">
+                    <div>
+                        <h2><i class="fa-solid fa-folder-open"></i> Projects</h2>
+                        <p class="section-subtitle">Manage your portfolio projects</p>
+                    </div>
+                    <button class="add-btn" id="add-project-btn">
+                        <i class="fa-solid fa-plus"></i> Add Project
+                    </button>
+                </div>
+                <div class="admin-table-container">
+                    <table class="admin-table">
+                        <thead>
+                            <tr>
+                                <th>Image</th>
+                                <th>Title</th>
+                                <th>Category</th>
+                                <th>Location</th>
+                                <th>Images</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="projects-table-body">
+                            <!-- Injected by JS -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Services Section -->
+            <div class="admin-section" id="section-services">
+                <div class="section-header">
+                    <div>
+                        <h2><i class="fa-solid fa-cogs"></i> Services</h2>
+                        <p class="section-subtitle">Manage your offered services</p>
+                    </div>
+                    <button class="add-btn" id="add-service-btn">
+                        <i class="fa-solid fa-plus"></i> Add Service
+                    </button>
+                </div>
+                <div class="admin-table-container">
+                    <table class="admin-table">
+                        <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th>Details</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="services-table-body"></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Experience Section -->
+            <div class="admin-section" id="section-experience">
+                <div class="section-header">
+                    <div>
+                        <h2><i class="fa-solid fa-briefcase"></i> Experience</h2>
+                        <p class="section-subtitle">Manage your work experience</p>
+                    </div>
+                    <button class="add-btn" id="add-experience-btn">
+                        <i class="fa-solid fa-plus"></i> Add Experience
+                    </button>
+                </div>
+                <div class="admin-table-container">
+                    <table class="admin-table">
+                        <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th>Company</th>
+                                <th>Period</th>
+                                <th>Location</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="experience-table-body"></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Education Section -->
+            <div class="admin-section" id="section-education">
+                <div class="section-header">
+                    <div>
+                        <h2><i class="fa-solid fa-graduation-cap"></i> Education</h2>
+                        <p class="section-subtitle">Manage your education history</p>
+                    </div>
+                    <button class="add-btn" id="add-education-btn">
+                        <i class="fa-solid fa-plus"></i> Add Education
+                    </button>
+                </div>
+                <div class="admin-table-container">
+                    <table class="admin-table">
+                        <thead>
+                            <tr>
+                                <th>Degree</th>
+                                <th>School</th>
+                                <th>Period</th>
+                                <th>Location</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="education-table-body"></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Courses Section -->
+            <div class="admin-section" id="section-courses">
+                <div class="section-header">
+                    <div>
+                        <h2><i class="fa-solid fa-book"></i> Courses</h2>
+                        <p class="section-subtitle">Manage your courses and certifications</p>
+                    </div>
+                    <button class="add-btn" id="add-course-btn">
+                        <i class="fa-solid fa-plus"></i> Add Course
+                    </button>
+                </div>
+                <div class="admin-table-container">
+                    <table class="admin-table">
+                        <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th>Provider</th>
+                                <th>Date</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="courses-table-body"></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Skills & Tools Section -->
+            <div class="admin-section" id="section-skills">
+                <div class="section-header">
+                    <div>
+                        <h2><i class="fa-solid fa-code"></i> Skills & Tools</h2>
+                        <p class="section-subtitle">Manage your technical skills and tools</p>
+                    </div>
+                </div>
+                <div class="skills-tools-grid">
+                    <div class="skills-panel">
+                        <div class="panel-header">
+                            <h3>Technical Skills</h3>
+                            <button class="add-btn small" id="add-skill-btn">
+                                <i class="fa-solid fa-plus"></i> Add
+                            </button>
+                        </div>
+                        <div class="tags-container" id="skills-tags-container">
+                            <!-- Injected by JS -->
+                        </div>
+                    </div>
+                    <div class="skills-panel">
+                        <div class="panel-header">
+                            <h3>Tools & Platforms</h3>
+                            <button class="add-btn small" id="add-tool-btn">
+                                <i class="fa-solid fa-plus"></i> Add
+                            </button>
+                        </div>
+                        <div class="tags-container" id="tools-tags-container">
+                            <!-- Injected by JS -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Personal Info Section -->
+            <div class="admin-section" id="section-personal">
+                <div class="section-header">
+                    <div>
+                        <h2><i class="fa-solid fa-user"></i> Personal Info</h2>
+                        <p class="section-subtitle">Edit your personal details</p>
+                    </div>
+                </div>
+                <form class="personal-form" id="personal-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">Full Name</label>
+                            <input type="text" class="form-input" id="pi-name">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Job Title</label>
+                            <input type="text" class="form-input" id="pi-title">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-input" id="pi-email">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Phone</label>
+                            <input type="text" class="form-input" id="pi-phone">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">Location</label>
+                            <input type="text" class="form-input" id="pi-location">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">LinkedIn URL</label>
+                            <input type="url" class="form-input" id="pi-linkedin">
+                        </div>
+                    </div>
+                    <div class="form-group full-width">
+                        <label class="form-label">About (supports HTML)</label>
+                        <textarea class="form-textarea" id="pi-about" rows="6"></textarea>
+                    </div>
+                    <button type="submit" class="add-btn">
+                        <i class="fa-solid fa-save"></i> Save Personal Info
+                    </button>
+                </form>
+            </div>
+
+            <!-- Categories Section -->
+            <div class="admin-section" id="section-categories">
+                <div class="section-header">
+                    <div>
+                        <h2><i class="fa-solid fa-tags"></i> Categories</h2>
+                        <p class="section-subtitle">Manage project categories</p>
+                    </div>
+                    <button class="add-btn" id="add-category-btn">
+                        <i class="fa-solid fa-plus"></i> Add Category
+                    </button>
+                </div>
+                <div class="admin-table-container">
+                    <table class="admin-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Projects</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="categories-table-body"></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- GitHub Settings Section -->
+            <div class="admin-section" id="section-github">
+                <div class="section-header">
+                    <div>
+                        <h2><i class="fa-brands fa-github"></i> GitHub Sync</h2>
+                        <p class="section-subtitle">Connect to GitHub for one-click deployment</p>
+                    </div>
+                </div>
+
+                <div class="github-setup">
+                    <!-- Status Card -->
+                    <div class="github-status-card" id="github-status-card">
+                        <div class="github-status-icon" id="github-status-icon">
+                            <i class="fa-solid fa-link-slash"></i>
+                        </div>
+                        <div>
+                            <h3 id="github-status-title">Not Connected</h3>
+                            <p id="github-status-desc">Set up your GitHub details below to enable one-click sync</p>
+                        </div>
+                    </div>
+
+                    <!-- Setup Form -->
+                    <form class="personal-form" id="github-form" style="margin-top: 25px;">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">GitHub Username *</label>
+                                <input type="text" class="form-input" id="gh-owner" placeholder="e.g. abdelrhman-shaban">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Repository Name *</label>
+                                <input type="text" class="form-input" id="gh-repo" placeholder="e.g. BIM-PORTIFLIO-">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">Branch</label>
+                                <input type="text" class="form-input" id="gh-branch" placeholder="main" value="main">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">File Path</label>
+                                <input type="text" class="form-input" id="gh-path" placeholder="js/data.js" value="js/data.js">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Personal Access Token *</label>
+                            <div style="position: relative;">
+                                <input type="password" class="form-input" id="gh-token" placeholder="ghp_xxxxxxxxxxxx" style="padding-right: 45px;">
+                                <button type="button" class="token-toggle" id="token-toggle" title="Show/Hide">
+                                    <i class="fa-solid fa-eye"></i>
+                                </button>
+                            </div>
+                            <p class="form-hint">GitHub → Settings → Developer settings → Personal access tokens → Tokens (classic) → Generate new token → اختار صلاحية <strong>repo</strong></p>
+                        </div>
+                        <div style="display: flex; gap: 12px; margin-top: 10px;">
+                            <button type="submit" class="add-btn">
+                                <i class="fa-solid fa-save"></i> Save Settings
+                            </button>
+                            <button type="button" class="add-btn" id="test-connection-btn" style="background: transparent; border: 1px solid var(--accent); color: var(--accent);">
+                                <i class="fa-solid fa-plug"></i> Test Connection
+                            </button>
+                        </div>
+                    </form>
+
+                    <!-- Passcode Security Form -->
+                    <form class="personal-form" id="passcode-form" style="margin-top: 30px;">
+                        <h3 style="margin-bottom: 15px; font-size: 1.1rem;"><i class="fa-solid fa-shield-halved" style="color: var(--accent);"></i> Dashboard Passcode Security</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">New Admin Passcode *</label>
+                                <input type="password" class="form-input" id="new-passcode" placeholder="Enter new strong passcode..." required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Confirm New Passcode *</label>
+                                <input type="password" class="form-input" id="confirm-passcode" placeholder="Confirm new passcode..." required>
+                            </div>
+                        </div>
+                        <button type="submit" class="add-btn" style="margin-top: 10px;">
+                            <i class="fa-solid fa-key"></i> Update Passcode
+                        </button>
+                    </form>
+
+                    <!-- How To Guide -->
+                    <div class="github-guide" style="margin-top: 40px;">
+                        <h3 style="margin-bottom: 20px;"><i class="fa-solid fa-circle-info" style="color: var(--accent);"></i> How to get a GitHub Token</h3>
+                        <div class="guide-steps">
+                            <div class="guide-step">
+                                <span class="step-num">1</span>
+                                <div>
+                                    <strong>Open GitHub Settings</strong>
+                                    <p>Go to <a href="https://github.com/settings/tokens" target="_blank" style="color: var(--accent);">github.com/settings/tokens</a></p>
+                                </div>
+                            </div>
+                            <div class="guide-step">
+                                <span class="step-num">2</span>
+                                <div>
+                                    <strong>Generate new token (classic)</strong>
+                                    <p>Click "Generate new token" → choose "classic"</p>
+                                </div>
+                            </div>
+                            <div class="guide-step">
+                                <span class="step-num">3</span>
+                                <div>
+                                    <strong>Select "repo" scope</strong>
+                                    <p>Check the "repo" checkbox for full repository access</p>
+                                </div>
+                            </div>
+                            <div class="guide-step">
+                                <span class="step-num">4</span>
+                                <div>
+                                    <strong>Copy & paste here</strong>
+                                    <p>Copy the token and paste it in the field above</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- Modal Overlay -->
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal-panel">
+            <div class="modal-header">
+                <h3 id="modal-title">Add Item</h3>
+                <button class="modal-close" id="modal-close">&times;</button>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <!-- Dynamic form injected by JS -->
+            </div>
+            <div class="modal-footer">
+                <button class="btn-cancel" id="modal-cancel">Cancel</button>
+                <button class="btn-save" id="modal-save">
+                    <i class="fa-solid fa-save"></i> Save
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Delete Confirmation -->
+    <div class="confirm-overlay" id="confirm-overlay">
+        <div class="confirm-panel">
+            <div class="confirm-icon">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+            </div>
+            <h3>Delete Item?</h3>
+            <p id="confirm-message">Are you sure you want to delete this item? This action cannot be undone.</p>
+            <div class="confirm-actions">
+                <button class="btn-cancel" id="confirm-cancel">Cancel</button>
+                <button class="btn-delete" id="confirm-delete">
+                    <i class="fa-solid fa-trash"></i> Delete
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <i class="toast-icon fa-solid fa-check-circle"></i>
+        <span class="toast-message" id="toast-message"></span>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/admin.js"></script>
+</body>
+</html>

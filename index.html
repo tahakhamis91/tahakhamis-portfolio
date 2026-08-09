@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taha Khamis | Electrical BIM Engineer</title>
+    <link rel="stylesheet" href="css/style.css?v=4.0">
+    <link rel="stylesheet" href="style.css?v=4.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container nav-container">
+            <div class="nav-logo" onclick="window.scrollTo(0,0)" style="margin-right: 40px;">TK.</div>
+            
+            <!-- Side-by-Side Navigation -->
+            <nav class="desktop-nav">
+                <ul class="nav-links">
+                    <li><a href="#hero" class="nav-link">HOME</a></li>
+                    <li><a href="#about" class="nav-link">ABOUT</a></li>
+                    <li><a href="#projects" class="nav-link">PROJECTS</a></li>
+                    <li><a href="#services" class="nav-link">SERVICES</a></li>
+                    <li><a href="#resume" class="nav-link highlight">RESUME</a></li>
+                    <li><a href="#footer" class="nav-link">CONTACT</a></li>
+                </ul>
+            </nav>
+
+            <!-- Mobile Menu Toggle -->
+            <div class="menu-toggle" id="menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="menu-overlay" id="menu-overlay">
+        <ul class="overlay-links">
+            <li><a href="#hero" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#services" class="nav-link">Services</a></li>
+            <li><a href="#resume" class="nav-link">Resume</a></li>
+            <li><a href="#footer" class="nav-link">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Home View Container (Everything that disappears when Resume is open) -->
+    <main id="home-view">
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+        <div class="container hero-content">
+            <span class="section-label" style="color: #fff;">Electrical BIM Engineer</span>
+            <h1>TAHA<br>KHAMIS</h1>
+            <h2>Electrical BIM Systems Specialist</h2>
+            <p>Specializing in 3D Electrical Design and BIM Coordination for high-scale architectural projects across Egypt & KSA.</p>
+            <div style="margin-top: 30px; display: flex; gap: 20px;">
+                <a href="#projects" class="cta-button primary">View Selected Work</a>
+                <a href="#resume" class="cta-button resume-trigger-btn">View Resume <i class="fa-regular fa-id-badge"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <span class="section-label">Biography</span>
+            <h2 class="section-title">About My Journey</h2>
+            <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 60px;">
+                <p class="modal-desc" id="about-text" style="font-size: 1.2rem;"></p>
+                <div class="modal-info" style="padding: 0; border: none;">
+                    <ul class="modal-meta-list" style="border-top: none;">
+                        <li><span class="meta-label">Location</span><span class="meta-value">Egypt & KSA</span></li>
+                        <li><span class="meta-label">Expertise</span><span class="meta-value">Electrical BIM Systems</span></li>
+                        <li><span class="meta-label">Phone</span><span class="meta-value">+20 10 16649202</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <span class="section-label">Portfolio</span>
+            <h2 class="section-title">Projects</h2>
+            
+            <div class="tabs-container" id="filter-tabs">
+                <!-- Dynamic Filters -->
+            </div>
+
+            <div class="projects-grid" id="projects-grid">
+                <!-- Dynamic Projects -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Automation Tools Section -->
+    <section id="automation-tools">
+        <div class="container">
+            <span class="section-label">Software Tools</span>
+            <h2 class="section-title">BIM Automation Tools</h2>
+            <div class="projects-grid" id="addins-grid">
+                <!-- Dynamic Addins -->
+            </div>
+        </div>
+    </section>
+
+        <!-- Services Section -->
+        <section id="services">
+            <div class="container">
+                <span class="section-label">Expertise</span>
+                <h2 class="section-title">Services</h2>
+                <div class="services-grid" id="services-grid">
+                    <!-- Dynamic Services -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Resume Section (Standalone View) -->
+    <section id="resume" class="resume-section" style="display: none;">
+        <div class="container">
+            <div class="resume-nav-top">
+                <a href="#" class="back-home-btn" id="resume-back-btn"><i class="fa-solid fa-arrow-left"></i> Back to Portfolio</a>
+            </div>
+            
+            <span class="section-label">Curriculum Vitae</span>
+            <h2 class="section-title">Resume</h2>
+            
+            <div class="resume-layout">
+                <!-- Left Sidebar: Profile Card -->
+                <div class="resume-sidebar">
+                    <div class="profile-card">
+                        <div class="profile-img-container">
+                            <img src="assets/images/cv.jpeg" alt="Taha Khamis">
+                        </div>
+                        <h3 class="profile-name">Taha Khamis</h3>
+                        <p class="profile-title">Electrical BIM Engineer</p>
+                        
+                        <div class="profile-divider"></div>
+                        
+                        <div class="profile-contact">
+                            <div class="contact-item">
+                                <i class="fa-solid fa-phone"></i>
+                                <span>+20 10 16649202</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Egypt & KSA</span>
+                            </div>
+                        </div>
+                        
+                        <div class="profile-socials-card">
+                            <a href="https://www.linkedin.com/in/taha--khamis/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://wa.me/201016649202" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                        </div>
+                        
+                        <a href="#" target="_blank" class="cta-button primary" style="margin-top: 30px; width: 100%; border-radius: 8px;">View Detailed PDF</a>
+                    </div>
+
+                    <!-- Technical Skills Card (New) -->
+                    <div class="resume-card-detail">
+                        <div class="card-header">
+                            <i class="fa-solid fa-code"></i>
+                            <h5>Technical Skills</h5>
+                        </div>
+                        <ul class="skills-checklist" id="resume-skills">
+                            <!-- Injected from data.js -->
+                        </ul>
+                    </div>
+
+                    <!-- Tools & Platforms Card (New) -->
+                    <div class="resume-card-detail">
+                        <div class="card-header">
+                            <i class="fa-solid fa-wrench"></i>
+                            <h5>Tools & Platforms</h5>
+                        </div>
+                        <div class="tools-tags" id="resume-tools">
+                            <!-- Injected from data.js -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Main: Timeline -->
+                <div class="resume-main">
+                    <div class="timeline-container">
+                        <div class="timeline-header">
+                            <i class="fa-solid fa-briefcase"></i>
+                            <h4>Experience</h4>
+                        </div>
+                        <div class="timeline" id="experience-timeline">
+                            <!-- Injected from data.js -->
+                        </div>
+
+                        <div class="timeline-header" style="margin-top: 60px;">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <h4>Education</h4>
+                        </div>
+                        <div class="timeline" id="education-timeline">
+                            <!-- Injected from data.js -->
+                        </div>
+
+                        <!-- Courses Section (New) -->
+                        <div class="timeline-header" style="margin-top: 60px;">
+                            <i class="fa-solid fa-book"></i>
+                            <h4>Courses & Learning</h4>
+                        </div>
+                        <div class="courses-list" id="resume-courses">
+                            <!-- Injected from data.js -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal (Instant Gallery) -->
+    <div class="modal" id="project-modal">
+        <span class="close-modal">&times;</span>
+        <div class="modal-content">
+            <div class="modal-visuals">
+                <div id="modal-media-container" style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
+                    <!-- Image or Video -->
+                </div>
+                <div class="modal-nav">
+                    <button id="prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button id="next-btn"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+            <div class="modal-info">
+                <h2 id="modal-title"></h2>
+                <div style="margin-bottom: 20px;">
+                    <span class="p-cat" id="modal-category"></span>
+                </div>
+                <p class="modal-desc" id="modal-details"></p>
+                <ul class="modal-meta-list" id="modal-meta">
+                    <!-- Dynamic Meta -->
+                </ul>
+                <div style="margin-top: 30px;">
+                    <a href="#" id="modal-ref-link" target="_blank" class="cta-button" style="border-color: var(--accent); color: var(--accent);">View Reference</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Social Bar -->
+    <div class="side-pill">
+        <a href="https://wa.me/201016649202" target="_blank" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://www.linkedin.com/in/taha--khamis/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="tel:+201016649202" title="Call"><i class="fa-solid fa-phone"></i></a>
+        <div class="pill-divider"></div>
+        <div class="theme-toggle" id="theme-toggle"><i class="fa-solid fa-sun"></i></div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <!-- Contact Box (Like reference) -->
+            <div class="contact-card" style="padding-bottom: 100px;">
+                <h3>Let's build something <span>remarkable.</span></h3>
+                <p>Have a BIM workflow that needs automating? A project that needs coordination? Let's talk.</p>
+                <div class="contact-actions" style="margin-top: 40px; display: flex; justify-content: center; gap: 15px;">
+                    <a href="https://wa.me/201016649202" target="_blank" class="cta-button primary" style="display: inline-flex !important; opacity: 1 !important;">Contact Me <i class="fa-brands fa-whatsapp" style="margin-left: 10px;"></i></a>
+                    <a href="#resume" class="cta-button" style="display: inline-flex !important; opacity: 1 !important; border-color: #fff;">View Resume <i class="fa-solid fa-file-pdf" style="margin-left: 10px;"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-logo" style="margin-top: 60px;">TK.</div>
+            <div class="footer-socials">
+                <a href="https://www.linkedin.com/in/taha--khamis/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://wa.me/201016649202" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="tel:+201016649202"><i class="fa-solid fa-phone"></i></a>
+            </div>
+            <p style="color: #555; text-transform: uppercase;">&copy; 2026 TAHA KHAMIS. ALL RIGHTS RESERVED.</p>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
