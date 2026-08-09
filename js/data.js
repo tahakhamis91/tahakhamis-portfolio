@@ -1,6 +1,6 @@
 const portfolioData = {
     "personalInfo": {
-        "name": "Taha Khamis",
+        "name": "Taha Khamiis",
         "title": "Electrical BIM Engineer",
         "email": "",
         "phone": "+201016649202",
