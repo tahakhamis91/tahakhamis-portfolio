@@ -136,11 +136,11 @@ const portfolioData = {
     ],
     "education": [
         {
-            "school": "Mansoura University",
-            "degree": "Bachelor’s Degree of Electrical Engineering",
-            "period": "2019 - 2024",
+            "school": "Al-Azhar university",
+            "degree": "B.SC. Electrical Power & Machines Department, Faculty of Engineering ering",
+            "period": "2021 - 2026",
             "location": "Egypt",
-            "description": "Electrical Power and Machine Department. Grade: Very Good (80.67%). Graduation Project: Electrical distribution for hospital using KNX (Excellent)."
+            "description": "Electrical Power and Machine Department. Grade: Very Good. \nGraduation Project Grade: Excellent       \n Designed a comprehensive electrical BIM model for a hospital building using full BIM tools including \nACC, Revit, AutoCAD, and Navisworks for coordination and clash detection. \n Applied BIM Dimensions (3D, 4D, 5D) and LOD standards to ensure accurate modeling, cost \nestimation, and scheduling. \n Created professional documentation including single line diagrams, panel schedules, and quantities \ntake off."
         }
     ],
     "technicalSkills": [
