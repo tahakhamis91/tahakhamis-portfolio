@@ -2,7 +2,7 @@ const portfolioData = {
     "personalInfo": {
         "name": "Taha Khamiis",
         "title": "Electrical BIM Engineer",
-        "email": "",
+        "email": "tahakhamis91@gmail.com",
         "phone": "+201016649202",
         "location": "Egypt & KSA",
         "linkedIn": "https://www.linkedin.com/in/taha--khamis/",
@@ -216,10 +216,23 @@ const portfolioData = {
             "category": "bim",
             "title": "SOLIMAN FAKEEH HOSIBTAL",
             "location": "KSA",
+            "client": "FAKEEH CARE",
+            "consultant": "ABDULRAZEK HAKEEM CONSULTING ENGINEERS",
+            "details": "• Worked as a freelance Electrical BIM Modeler on the Dr. Soliman Fakeeh Hospital project in Saudi Arabia. \n• Converted 2D AutoCAD electrical drawings into detailed Revit BIM models. \n• Modeled electrical systems including Lighting, Power, Data, Telephone, and IPTV systems. \n• Ensured accurate coordination and organized BIM documentation for the project.",
             "images": [
-                "SOLIMAN_FAKEEH_HOSIBTAL/media_1_1786293725527.png",
-                "SOLIMAN_FAKEEH_HOSIBTAL/media_2_1786293727427.png"
+                "SOLIMAN_FAKEEH_HOSIBTAL/media_1_1786699732405.png",
+                "SOLIMAN_FAKEEH_HOSIBTAL/media_2_1786699738194.png",
+                "SOLIMAN_FAKEEH_HOSIBTAL/media_3_1786699745290.png",
+                "SOLIMAN_FAKEEH_HOSIBTAL/media_4_1786699751974.png",
+                "SOLIMAN_FAKEEH_HOSIBTAL/media_5_1786699761512.png",
+                "SOLIMAN_FAKEEH_HOSIBTAL/media_6_1786699767941.png",
+                "SOLIMAN_FAKEEH_HOSIBTAL/media_7_1786699780674.png",
+                "SOLIMAN_FAKEEH_HOSIBTAL/media_8_1786699812975.png",
+                "SOLIMAN_FAKEEH_HOSIBTAL/media_9_1786699816168.png",
+                "SOLIMAN_FAKEEH_HOSIBTAL/media_10_1786699820118.png",
+                "SOLIMAN_FAKEEH_HOSIBTAL/media_11_1786699831719.png"
             ],
+            "refLink": "https://en.ahc-contracting.com/projects/dr-soliman-fakeeh-medical-center-al-zahra-jeddah",
             "technologies": []
         }
     ]
