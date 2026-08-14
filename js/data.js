@@ -218,7 +218,7 @@ const portfolioData = {
             "location": "KSA",
             "client": "FAKEEH CARE",
             "consultant": "ABDULRAZEK HAKEEM CONSULTING ENGINEERS",
-            "details": "• Worked as a freelance Electrical BIM Modeler on the Dr. Soliman Fakeeh Hospital project in Saudi Arabia. \n• Converted 2D AutoCAD electrical drawings into detailed Revit BIM models. \n• Modeled electrical systems including Lighting, Power, Data, Telephone, and IPTV systems. \n• Ensured accurate coordination and organized BIM documentation for the project.",
+            "details": "• Worked as a freelance Electrical BIM Modeler on the Dr. Soliman Fakeeh Hospital project in Saudi Arabia.\n• Converted 2D AutoCAD electrical drawings into detailed Revit BIM models. \n• Modeled electrical systems including Lighting, Power, Data, Telephone, and IPTV systems.\n• Ensured accurate coordination and organized BIM documentation for the project.",
             "images": [
                 "SOLIMAN_FAKEEH_HOSIBTAL/media_1_1786699732405.png",
                 "SOLIMAN_FAKEEH_HOSIBTAL/media_2_1786699738194.png",
