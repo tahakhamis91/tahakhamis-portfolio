@@ -234,6 +234,24 @@ const portfolioData = {
             ],
             "refLink": "https://en.ahc-contracting.com/projects/dr-soliman-fakeeh-medical-center-al-zahra-jeddah",
             "technologies": []
+        },
+        {
+            "id": 1786702160083,
+            "category": "bim",
+            "title": "Officer Accommodation",
+            "location": "UAE",
+            "consultant": "DISTRICT",
+            "images": [
+                "OFFICER_ACCOMMODATION/media_1_1786704303855.jpg",
+                "OFFICER_ACCOMMODATION/media_2_1786704310404.jpg",
+                "OFFICER_ACCOMMODATION/media_3_1786704317049.jpg",
+                "OFFICER_ACCOMMODATION/media_4_1786704324358.jpg",
+                "OFFICER_ACCOMMODATION/media_5_1786704331601.jpg",
+                "OFFICER_ACCOMMODATION/media_6_1786704379782.jpg",
+                "OFFICER_ACCOMMODATION/media_7_1786704382831.jpg",
+                "OFFICER_ACCOMMODATION/media_8_1786704389200.jpg"
+            ],
+            "technologies": []
         }
     ]
 };
