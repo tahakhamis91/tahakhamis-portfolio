@@ -220,17 +220,14 @@ const portfolioData = {
             "consultant": "ABDULRAZEK HAKEEM CONSULTING ENGINEERS",
             "details": "• Worked as a freelance Electrical BIM Modeler on the Dr. Soliman Fakeeh Hospital project in Saudi Arabia.\n\n• Converted 2D AutoCAD electrical drawings into detailed Revit BIM models. \n\n• Modeled electrical systems including Lighting, Power, Data, Telephone, and IPTV systems.\n\n• Ensured accurate coordination and organized BIM documentation for the project.",
             "images": [
-                "SOLIMAN_FAKEEH_HOSIBTAL/media_1_1786699732405.png",
-                "SOLIMAN_FAKEEH_HOSIBTAL/media_2_1786699738194.png",
-                "SOLIMAN_FAKEEH_HOSIBTAL/media_3_1786699745290.png",
-                "SOLIMAN_FAKEEH_HOSIBTAL/media_4_1786699751974.png",
-                "SOLIMAN_FAKEEH_HOSIBTAL/media_5_1786699761512.png",
-                "SOLIMAN_FAKEEH_HOSIBTAL/media_6_1786699767941.png",
-                "SOLIMAN_FAKEEH_HOSIBTAL/media_7_1786699780674.png",
-                "SOLIMAN_FAKEEH_HOSIBTAL/media_8_1786699812975.png",
-                "SOLIMAN_FAKEEH_HOSIBTAL/media_9_1786699816168.png",
-                "SOLIMAN_FAKEEH_HOSIBTAL/media_10_1786699820118.png",
-                "SOLIMAN_FAKEEH_HOSIBTAL/media_11_1786699831719.png"
+                "SOLIMAN_FAKEEH_HOSIBTAL/media_1_1786706879522.jpg",
+                "SOLIMAN_FAKEEH_HOSIBTAL/media_2_1786706883391.jpg",
+                "SOLIMAN_FAKEEH_HOSIBTAL/media_3_1786706888210.png",
+                "SOLIMAN_FAKEEH_HOSIBTAL/media_4_1786706895128.png",
+                "SOLIMAN_FAKEEH_HOSIBTAL/media_5_1786706899881.png",
+                "SOLIMAN_FAKEEH_HOSIBTAL/media_6_1786706903762.png",
+                "SOLIMAN_FAKEEH_HOSIBTAL/media_7_1786706909107.png",
+                "SOLIMAN_FAKEEH_HOSIBTAL/media_8_1786706914570.png"
             ],
             "refLink": "https://en.ahc-contracting.com/projects/dr-soliman-fakeeh-medical-center-al-zahra-jeddah",
             "technologies": []
