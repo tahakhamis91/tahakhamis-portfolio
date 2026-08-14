@@ -241,14 +241,12 @@ const portfolioData = {
             "consultant": "DISTRICT",
             "details": "Zayed Military University (ZMU) Project – Zone 8 (Officer Accommodation)\nRole: Electrical Design & BIM Engineer (Lighting Specialist)\nKey Contribution: Handled the complete lighting design cycle for the Zone 8 facility. Performed detailed illuminance calculations using DIALux evo to satisfy precise lux requirements, followed by full 3D modeling and sheet setup in Autodesk Revit for coordinated project delivery.",
             "images": [
-                "OFFICER_ACCOMMODATION/media_1_1786704303855.jpg",
-                "OFFICER_ACCOMMODATION/media_2_1786704310404.jpg",
-                "OFFICER_ACCOMMODATION/media_3_1786704317049.jpg",
-                "OFFICER_ACCOMMODATION/media_4_1786704324358.jpg",
-                "OFFICER_ACCOMMODATION/media_5_1786704331601.jpg",
-                "OFFICER_ACCOMMODATION/media_6_1786704379782.jpg",
-                "OFFICER_ACCOMMODATION/media_7_1786704382831.jpg",
-                "OFFICER_ACCOMMODATION/media_8_1786704389200.jpg"
+                "OFFICER_ACCOMMODATION/media_1_1786707510209.jpg",
+                "OFFICER_ACCOMMODATION/media_2_1786707514242.jpg",
+                "OFFICER_ACCOMMODATION/media_3_1786707516841.jpg",
+                "OFFICER_ACCOMMODATION/media_4_1786707522456.jpg",
+                "OFFICER_ACCOMMODATION/media_5_1786707525772.jpg",
+                "OFFICER_ACCOMMODATION/media_6_1786707529998.jpg"
             ],
             "technologies": []
         }
