@@ -106,38 +106,31 @@ const portfolioData = {
     ],
     "experience": [
         {
-            "company": "AIM United Company Ltd",
+            "company": "DISTRICT",
             "title": "Electrical BIM Engineer",
-            "period": "Mar 2025 - Present",
+            "period": "Jun 2026 - Present",
             "location": "EGY",
-            "description": "Developed and managed electrical BIM models up to LOD 400 in alignment with project specifications and industry standards. • Prepared shop drawings for all electrical embedded systems including power, lighting, and low current. • Extracted and incorporated real data from material submittals into the BIM model to ensure design accuracy. • Coordinated with other disciplines (architectural, structural, mechanical) to resolve clashes and ensure seamless integration. • Participated in clash detection and coordination meetings, resolving issues efficiently to support smooth construction workflows. • Maintained model accuracy and compliance throughout design, construction, and handover stages. • Utilized Autodesk Revit, Navisworks, and AutoCAD for modeling, documentation, and coordination tasks."
+            "description": "Developed and managed electrical BIM models up to LOD 400 in alignment with project specifications and industry standards. Extracted and incorporated real data from material submittals into the BIM model to ensure high design accuracy. Coordinated with multidisciplinary teams including architectural, structural, and mechanical to resolve clashes and ensure seamless integration. Participated in clash detection and coordination meetings, efficiently resolving issues to support smooth construction workflows. Maintained model accuracy and standards compliance throughout the design, construction, and handover stages. Utilized Autodesk Revit and AutoCAD for modeling, documentation, and coordination tasks.."
         },
         {
-            "company": "Pioneer Engineering Consultancy LLC",
+            "company": "KAITECH",
             "title": "Electrical BIM Engineer",
-            "period": "Jun 2024 - Mar 2025",
-            "location": "UAE/EGY",
-            "description": "Work as Electrical BIM Engineer responsible for  -Creating  3D Model For Electrical Systems Like ( CableRouting-Power-Lighting-ICT-...etc)  -Clash Solutions with Other Discipline   -Presentation for Layout To hand over to Client -Design systems According To Codes  -Shop drawing for Different Discpline."
+            "period": "Jun 2025 - Oct 2025",
+            "location": "EGY",
+            "description": "After eight months of intensive work, research, and collaboration, I'm proud to showcase the culmination of our efforts. This project has been a significant milestone in my BIM journey, allowing me to apply theoretical knowledge to real-world scenarios and push the boundaries of innovation in construction and design.\nThe following are the main points covered:\nBIM Fundamentals & Management\n• BIM Fundamentals Course\n• BIM Information Management According to ISO 19650\nDesign & Modeling (Revit)\n• Revit Essential Course\n• Revit Advanced Course\n• Revit Worksharing Course\n• Revit Coordination Course\nCoordination & Advanced Dimensions\n• Coordination and Clash Detection (Navisworks) Course\n• BIM 4D\n• BIM 5D\n• BIM 6D (Sustainability)\n• BIM 7D (Facility Management)\nAdvanced Tools & Cloud Platforms\n• Autodesk Construction Cloud Course\n• Dynamo Course\n• Enscape Course\n• XR Technologies (Virtual Reality & Augmented Reality) Course\nCapstone Project\n• Graduation Project"
         },
         {
-            "company": "Eduneers",
-            "title": "Team Manager and Coordinator",
-            "period": "Apr 2023 - 2024",
-            "location": "Online/Egypt",
-            "description": "ffective Team Leadership: Led a multidisciplinary team of engineers and trainers, coordinating efforts to ensure seamless project execution and timely delivery of training programs and engineering solutions. Streamlined Project Management: Implemented project management best practices, resulting in improved task prioritization and resource allocation, leading to the successful completion of multiple training programs and engineering projects. Enhanced Client Satisfaction: Coordinated with clients to understand their needs and customized training content accordingly, leading to higher client satisfaction and repeat business. Optimized Workflow Efficiency: Developed and standardized processes for training program delivery and project management, reducing turnaround time and increasing operational efficiency."
-        },
-        {
-            "company": "ALDAR CONSULTING OFFICE",
+            "company": "Eduvate",
             "title": "Assistant Electrical Design Engineer",
-            "period": "2022 - 2023",
-            "location": "Egypt",
-            "description": "Project Involvement: Contributed to multiple large-scale projects, including water treatment plants, sewage stations, and administrative buildings. Design and Drafting: Created detailed electromechanical designs, ensuring compliance with industry standards and project requirements. Technical Coordination: Collaborated with multidisciplinary teams to integrate mechanical, electrical, and plumbing (MEP) systems into overall project designs. Project Supervision: Assisted in on-site supervision, ensuring that the implementation adhered to design specifications and timelines. Client Communication: Engaged with clients to gather requirements, provide design solutions, and ensure alignment with project objectives. Document Preparation: Developed technical drawings, specifications, and reports for project submissions, maintaining accuracy and thoroughness. Problem Solving: Resolved technical issues and provided innovative solutions to enhance project efficiency and reduce costs. Quality Control: Ensured the quality of designs and project deliverables by conducting rigorous reviews and adhering to quality assurance protocols."
+            "period": "Jun 2025 -  Sep 2025",
+            "location": "EGY",
+            "description": "Worked as a part-time coordinator responsible for supervising and supporting a group of electrical engineering trainees:\n-Assigning and following up on technical tasks and training progress.\n-Supporting trainees in understanding electrical design and execution concepts.\n-Coordinating between instructors and trainees to ensure smooth workflow.\n-Reviewing submissions and providing technical feedback.\n-Managing group communication and deadlines."
         }
     ],
     "education": [
         {
             "school": "Al-Azhar university",
-            "degree": "B.SC. Electrical Power & Machines Department, Faculty of Engineering ering",
+            "degree": "B.SC. Electrical Power & Machines Department, Faculty of Engineering",
             "period": "2021 - 2026",
             "location": "Egypt",
             "description": "Electrical Power and Machine Department. Grade: Very Good. \nGraduation Project Grade: Excellent       \n Designed a comprehensive electrical BIM model for a hospital building using full BIM tools including \nACC, Revit, AutoCAD, and Navisworks for coordination and clash detection. \n Applied BIM Dimensions (3D, 4D, 5D) and LOD standards to ensure accurate modeling, cost \nestimation, and scheduling. \n Created professional documentation including single line diagrams, panel schedules, and quantities \ntake off."
@@ -154,52 +147,50 @@ const portfolioData = {
     ],
     "tools": [
         "Revit",
-        "AutoCAD",
         "Navisworks",
         "Dialux Evo",
         "ETAP",
-        "BIM360 / ACC"
+        "ACC (Autodesk Forma)",
+        "AutoCAD",
+        "Dynamo",
+        "MATLAB",
+        "Microsoft Office (Word, Excel, Power Point)"
     ],
     "courses": [
         {
-            "title": "BIM Application Development",
+            "title": "MEP BIM DIPLOMA АТ КАТЕCH ACADEMY",
             "provider": "KAITECH",
-            "date": "2025"
+            "date": "Feb2025-Oct2025"
         },
         {
-            "title": "Technical Coordination Workshop",
-            "provider": "KAITECH",
-            "date": "2025"
+            "title": "ABB right Minds 2025 Summer Training",
+            "provider": "ABB",
+            "date": "Aug 2025-Sep 2025"
         },
         {
-            "title": "Electrical BIM with Autodesk Revit",
-            "provider": "Eduneers",
-            "date": "2024"
+            "title": "Professional Diploma with EDUVATE",
+            "provider": "EDUVATE",
+            "date": "Jul 2024-Sep 2024"
         },
         {
-            "title": "KNX Protocol and BMS",
-            "provider": "Eduneers",
-            "date": "2024"
+            "title": "Basic Automation Diploma at HA Consulting Group",
+            "provider": "HA Consulting Group",
+            "date": "Jun 2024-Jul 2024"
         },
         {
-            "title": "Advanced Technical Office Training",
-            "provider": "Eduneers",
-            "date": "2023"
+            "title": "Intern at West Delta Electricity Production Company",
+            "provider": "West Delta Electricity Production Company",
+            "date": "September 2023"
         },
         {
-            "title": "Project Management Professional (PMP)",
-            "provider": "AmCham",
-            "date": "2023"
+            "title": "Intern at Egyptian Electricity Transmission Company Alexandria and West Delta Region",
+            "provider": "Egyptian Electricity Transmission Company Alexandria and West Delta Region",
+            "date": "August 2023"
         },
         {
-            "title": "Autodesk Revit MEP Advanced",
-            "provider": "Udemy",
-            "date": "2023"
-        },
-        {
-            "title": "Solar Energy Training",
-            "provider": "Africa Power",
-            "date": "2022"
+            "title": "Intern at Egyptian Electricity Transmission Company Alexandria and West Delta Region",
+            "provider": "Egyptian Electricity Transmission Company Alexandria and West Delta Region",
+            "date": "July 2023"
         }
     ],
     "projects": [
