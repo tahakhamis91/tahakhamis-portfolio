@@ -144,16 +144,13 @@ const portfolioData = {
         }
     ],
     "technicalSkills": [
-        "C# / .NET",
-        "Revit API",
         "BIM Automation",
         "Electrical Design",
         "Power Distribution",
         "Lighting Systems",
         "Low Current Systems",
         "Clash Detection",
-        "Coordination",
-        "SQL Server"
+        "Coordination"
     ],
     "tools": [
         "Revit",
@@ -161,12 +158,7 @@ const portfolioData = {
         "Navisworks",
         "Dialux Evo",
         "ETAP",
-        "Visual Studio",
-        "Git",
-        "Postman",
-        "BIM360 / ACC",
-        "Relux",
-        "AMS Tools"
+        "BIM360 / ACC"
     ],
     "courses": [
         {
