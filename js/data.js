@@ -218,7 +218,7 @@ const portfolioData = {
             "location": "KSA",
             "client": "FAKEEH CARE",
             "consultant": "ABDULRAZEK HAKEEM CONSULTING ENGINEERS",
-            "details": "• Worked as a freelance Electrical BIM Modeler on the Dr. Soliman Fakeeh Hospital project in Saudi Arabia.\n• Converted 2D AutoCAD electrical drawings into detailed Revit BIM models. \n• Modeled electrical systems including Lighting, Power, Data, Telephone, and IPTV systems.\n• Ensured accurate coordination and organized BIM documentation for the project.",
+            "details": "• Worked as a freelance Electrical BIM Modeler on the Dr. Soliman Fakeeh Hospital project in Saudi Arabia.\n\n• Converted 2D AutoCAD electrical drawings into detailed Revit BIM models. \n\n• Modeled electrical systems including Lighting, Power, Data, Telephone, and IPTV systems.\n\n• Ensured accurate coordination and organized BIM documentation for the project.",
             "images": [
                 "SOLIMAN_FAKEEH_HOSIBTAL/media_1_1786699732405.png",
                 "SOLIMAN_FAKEEH_HOSIBTAL/media_2_1786699738194.png",
@@ -240,7 +240,9 @@ const portfolioData = {
             "category": "bim",
             "title": "Officer Accommodation",
             "location": "UAE",
+            "client": "Abu Dhabi Projects and Infrastructure Centre",
             "consultant": "DISTRICT",
+            "details": "Zayed Military University (ZMU) Project – Zone 8 (Officer Accommodation)\nRole: Electrical Design & BIM Engineer (Lighting Specialist)\nKey Contribution: Handled the complete lighting design cycle for the Zone 8 facility. Performed detailed illuminance calculations using DIALux evo to satisfy precise lux requirements, followed by full 3D modeling and sheet setup in Autodesk Revit for coordinated project delivery.",
             "images": [
                 "OFFICER_ACCOMMODATION/media_1_1786704303855.jpg",
                 "OFFICER_ACCOMMODATION/media_2_1786704310404.jpg",
