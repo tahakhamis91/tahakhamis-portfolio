@@ -232,6 +232,24 @@ const portfolioData = {
                 "OFFICER_ACCOMMODATION/media_6_1786707529998.jpg"
             ],
             "technologies": []
+        },
+        {
+            "id": 1786823694300,
+            "category": "commercial",
+            "title": "Galaxy Mall",
+            "location": "EGY",
+            "consultant": "DISTRICT",
+            "images": [
+                "GALAXY_MALL/media_1_1786823758436.png",
+                "GALAXY_MALL/media_2_1786823760468.png",
+                "GALAXY_MALL/media_3_1786823763218.png",
+                "GALAXY_MALL/media_4_1786823764946.png",
+                "GALAXY_MALL/media_5_1786823766726.png",
+                "GALAXY_MALL/media_6_1786823769357.png",
+                "GALAXY_MALL/media_7_1786823770952.png",
+                "GALAXY_MALL/media_8_1786823772402.png"
+            ],
+            "technologies": []
         }
     ]
 };
