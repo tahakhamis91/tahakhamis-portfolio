@@ -262,12 +262,11 @@ const portfolioData = {
             "images": [
                 "MALL_BADR/media_1_1787441702786.png",
                 "MALL_BADR/media_2_1787441705553.png",
-                "MALL_BADR/media_3_1787441707834.png",
-                "MALL_BADR/media_4_1787441711187.png",
-                "MALL_BADR/media_5_1787441773501.png",
-                "MALL_BADR/media_6_1787441775658.png",
-                "MALL_BADR/media_7_1787441778939.png",
-                "MALL_BADR/media_8_1787441781706.png"
+                "MALL_BADR/media_3_1787441970175.png",
+                "MALL_BADR/media_4_1787441973185.png",
+                "MALL_BADR/media_5_1787441979930.png",
+                "MALL_BADR/media_6_1787441982506.png",
+                "MALL_BADR/media_7_1787441985263.png"
             ],
             "technologies": []
         }
