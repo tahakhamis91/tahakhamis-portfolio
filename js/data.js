@@ -269,6 +269,30 @@ const portfolioData = {
                 "MALL_BADR/media_7_1787441985263.png"
             ],
             "technologies": []
+        },
+        {
+            "id": 1788004155092,
+            "category": "bim",
+            "title": "Alex Bank",
+            "location": "EGY",
+            "client": "Alex Bank",
+            "details": "• Designed complete electrical systems, including power distribution, lighting, and low-current systems for \nhealthcare and commercial projects, including Fire Alarm, Public Address (PA), Access Control, CCTV, and \nData systems, using Revit, AutoCAD, and DIALux evo. \n• Prepared panel schedules, electrical layouts, and technical design documentation in accordance with project \nrequirements and applicable electrical codes. \n• Supervised construction activities to ensure compliance with approved drawings, project specifications, and \nelectrical codes. \n• Prepared quantity take-offs, Bills of Quantities (BOQs), and technical office documentation throughout project \nexecution. \n• Coordinated with multidisciplinary teams to resolve technical issues and deliver high-quality, coordinated \nengineering solutions",
+            "images": [
+                "ALEX_BANK/media_1_1788004204148.jpg",
+                "ALEX_BANK/media_2_1788004222164.jpg",
+                "ALEX_BANK/media_3_1788004226201.jpg",
+                "ALEX_BANK/media_4_1788004228580.jpg",
+                "ALEX_BANK/media_5_1788004231084.jpg",
+                "ALEX_BANK/media_6_1788004233944.jpg",
+                "ALEX_BANK/media_7_1788004236782.jpg",
+                "ALEX_BANK/media_8_1788004239662.jpg",
+                "ALEX_BANK/media_9_1788004242305.jpg",
+                "ALEX_BANK/media_10_1788004245463.jpg",
+                "ALEX_BANK/media_11_1788004248527.jpg",
+                "ALEX_BANK/media_12_1788004252012.jpg",
+                "ALEX_BANK/media_13_1788004255572.jpg"
+            ],
+            "technologies": []
         }
     ]
 };
